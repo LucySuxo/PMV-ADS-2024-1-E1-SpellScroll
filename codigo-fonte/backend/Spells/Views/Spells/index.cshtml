@@ -1,11 +1,11 @@
-﻿@model IEnumerable<spellScrollBackend.Models.Spell>
+@model IEnumerable<spellScrollBackend.Models.Spell>
 
 @{
     ViewData["Title"] = "Index";
 }
 
 <style>
-    #menu{
+    #menu {
         gap: 1rem;
         justify-content: center;
         align-items: center;
@@ -15,12 +15,21 @@
         padding: 0;
         height: 2rem;
         width: 8rem;
+        border-radius: 0.5rem; /* Adiciona bordas arredondadas */
+        border: 1px solid #ccc; /* Adiciona uma borda cinza clara */
+        padding-left: 0.5rem; /* Adiciona padding à esquerda para espaçamento */
     }
 
-    .p-8{
+    #classFilter:focus, #levelFilter:focus {
+        outline: none; /* Remove o outline padrão ao focar */
+        border-color: #6f29e9; /* Altera a cor da borda ao focar */
+    }
+
+    .p-8 {
         padding: 2rem;
     }
-    .p-4{
+
+    .p-4 {
         padding: 1rem;
     }
 </style>
